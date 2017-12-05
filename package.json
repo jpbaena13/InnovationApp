@@ -1,9 +1,9 @@
 {
   "name": "InnovationApp",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
+  "author": "JpBaena13",
+  "homepage": "http://www.ideozone.com/",
+  "private": false,
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
