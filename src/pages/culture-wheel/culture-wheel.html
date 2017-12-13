@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <small>Herramienta</small>
+      <div>Rueda de la cultura innovadora</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>RUEDA DE LA CULTURA INNOVADORA</h3>
+  
+  <h5>Descripción</h5>
+  <div>
+    Esta herramienta permite identificar que elementos de la cultura innovadora se deben reforzar y cuales tienen interiorizados, con el fin de poder realizar un plan de acción que permita a corto, mediano y largo plazo incorporar los valores y comportamientos que llevan a avanzar de mejor manera en los procesos de innovación.
+  </div>
+
+  <h5>¿Cuándo se debe utilizar?</h5>
+  <div>
+    Cuando sea necesario realizar un diagnóstico somero de la cultura empresarial, es decir, el iniciar un plan de cultura con enfoque en la innovación y hacer su seguimiento.
+  </div>
+
+  <h5>¿Cómo se debe utilizar?</h5>
+  <ol>
+    <li>
+      Calificar de 1 a 10 cada uno de los aspectos asociados a los siete elementos de la cultura innovadora basados en tu comportamiento.
+    </li>
+    <li>
+      Promediar cada elementos de la cultura innovadora sumando los puntajes obtenidos en cada comportamiento y dividiéndolo entre seis.
+    </li>
+    <li>
+      Graficar los resultados sobre el radar de la cultura innovadora.
+    </li>
+  </ol>
+
+  <h5>Entendiendo la herramienta</h5>
+  Califique de 1 a 10 los comportamientos en cada una de las siguientes tablas asociadas con los siete elementos de la cultura innovadora.
+
+  <table border='1' *ngFor="let behavior of behaviors">
+    <thead>
+      <tr>
+        <th><h6>{{behavior.name}}</h6></th>
+        <th>Puntuación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of behavior.items">
+        <td width="80%">{{item}}</td>
+        <td width="20%"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</ion-content>
