@@ -9,14 +9,16 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { CultureWheelPage } from '../pages/culture-wheel/culture-wheel'
+import { CultureWheelPage } from '../pages/culture-wheel/culture-wheel';
+import { CreativeProcessPage } from '../pages/creative-process/creative-process';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CultureWheelPage
+    CultureWheelPage,
+    CreativeProcessPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { CultureWheelPage } from '../pages/culture-wheel/culture-wheel'
     MyApp,
     HomePage,
     ListPage,
-    CultureWheelPage
+    CultureWheelPage,
+    CreativeProcessPage
   ],
   providers: [
     StatusBar,

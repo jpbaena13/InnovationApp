@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { CultureWheelPage } from '../pages/culture-wheel/culture-wheel'
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +12,7 @@ import { CultureWheelPage } from '../pages/culture-wheel/culture-wheel'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CultureWheelPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -23,7 +22,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Inicio', component: HomePage },
-      { title: 'Todas las herramientas', component: ListPage },
+      { title: 'Lista las herramientas', component: ListPage },
     ];
 
   }
