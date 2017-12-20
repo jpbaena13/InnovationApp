@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <small>Herramienta</small>
+      <div>Su potencial creativo</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h3>Su potencial creativo</h3>
+
+	<h5>Descripción</h5>
+	<div>
+		Todos somos creativos, según la afirmación unánime de todos los estudiosos de la creatividad. A continuación un instrumento adaptado de uno diseñado por el Dr. David de Prado Diez, para mirar los rasgos del potencial creativos de una persona.
+	</div>
+
+	<h5>¿Cuándo se debe usar?</h5>
+	<div>
+		Se puede utilizar en diferentes momentos de implementación de un proceso de innovación empresarial para determinar rasgos del potencial creativo.
+	</div>
+
+	<h5>¿Cómo se debe utilizar?</h5>
+	<div>
+		<ol>
+			<li>Diligencia el cuestionario adjunto de manera individual.</li>
+			<li>Califique de 1 a 5, siendo 1 el menor y 5 el mayor, aquellos criterios y procesos que coincidan con su modo de pensar y actuar.</li>
+			<li>Suma el puntaje de todas las preguntas.</li>
+			<li>Interpreta el puntaje obtenido.</li>
+		</ol>
+	</div>
+
+	<h5>Entendiendo la herramienta</h5>
+	<div>
+		Diligencia la siguiente tabla calificando de 1 a 5 los criterios que coincidan con su modo de pensar y actuar. Luego totalice e interprete los resultados.
+
+		<table border='1'>
+	    <thead>
+	      <tr>
+	        <th><h6>Aspectos a evaluar</h6></th>
+	        <th>Puntuación</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr *ngFor="let aspect of aspects">
+	        <td width="80%"><strong>{{aspect.name}}</strong>: {{aspect.description}}</td>
+	        <td width="20%"></td>
+	      </tr>
+	    </tbody>
+	  </table>
+
+	  <h6>Interpretación</h6>
+	  <div>
+	  	<table>
+	  		<tr><td cols="2">Rango</td></tr>
+	  		<tr><td width="20%">61 - 75</td><td>Potencial creativo sobresaliente</td></tr>
+	  		<tr><td width="20%">46 - 60</td><td>Creatividad notable, tienes muchas posibilidad de que puedas explorar</td></tr>
+	  		<tr><td width="20%">31 - 45</td><td>Tu capacidad de creación es buena y debes ampliarla</td></tr>
+	  		<tr><td width="20%">15 - 30</td><td>Tienes bases, hay que mejorar</td></tr>
+	  	</table>
+	  </div>
+	</div>
+</ion-content>

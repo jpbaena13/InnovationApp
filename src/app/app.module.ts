@@ -11,6 +11,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CultureWheelPage } from '../pages/culture-wheel/culture-wheel';
 import { CreativeProcessPage } from '../pages/creative-process/creative-process';
+import { ScamperPage } from '../pages/scamper/scamper';
+import { CreativePotentialPage } from '../pages/creative-potential/creative-potential';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CreativeProcessPage } from '../pages/creative-process/creative-process'
     HomePage,
     ListPage,
     CultureWheelPage,
-    CreativeProcessPage
+    CreativeProcessPage,
+    ScamperPage,
+    CreativePotentialPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { CreativeProcessPage } from '../pages/creative-process/creative-process'
     HomePage,
     ListPage,
     CultureWheelPage,
-    CreativeProcessPage
+    CreativeProcessPage,
+    ScamperPage,
+    CreativePotentialPage
   ],
   providers: [
     StatusBar,

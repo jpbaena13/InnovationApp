@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ideozone.innovationapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Herramientas de Innovación</name>
+    <name>Innotools</name>
     <description>Conjunto de herramientas para la innovación</description>
     <author email="jpbaena13@gmail.com" href="http://www.ideozone.com/">Juan Pablo Baena</author>
     <content src="index.html" />
